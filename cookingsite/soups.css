@@ -1,0 +1,80 @@
+body.soups-page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background: url('https://shalom.yourcreative.com.au/wp-content/uploads/2025/01/soup-animated.gif') no-repeat center center/cover;
+
+  backdrop-filter: blur(5px);
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #e7e7e7;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-weight: 800;
+}
+
+.salads {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.salad {
+  background: rgba(255, 255, 255, 0.699);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.salad:hover {
+  transform: scale(1.02);
+}
+
+.salad img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.salad h2 {
+  margin: 1rem 1rem 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #000000;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.salad p {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 0.95rem;
+  color: #000000;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+}
+.back-button {
+  display: inline-block;
+  margin: 1rem;
+  padding: 10px 20px;
+  background-color: #251a1a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #000000;
+}
